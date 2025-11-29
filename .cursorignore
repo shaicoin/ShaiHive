@@ -1,0 +1,36 @@
+# Flutter/Dart defaults
+.dart_tool/
+.packages
+.pub/
+build/
+.flutter-plugins
+.flutter-plugins-dependencies
+.melos_tool/
+.metadata
+android/
+ios/
+macos/
+web/
+windows/
+linux/
+
+# VS Code and IntelliJ files
+.vscode/
+.idea/
+*.iml
+
+# Others
+*.log
+*.swp
+*.lock
+# Packages
+pubspec.lock
+
+# App bundles & generated files
+*.ipa
+*.apk
+*.aab
+
+# cursorignore files
+*.cursorignore
+
