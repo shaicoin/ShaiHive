@@ -1,4 +1,4 @@
-# shaicoin
+# ShaiHive
 
 ## A Digital Renaissance Powered by Verifiable Credentials (VCs)
 ShaiHive is the Shaicoin mobile wallet for those who want custody over coins and culture. It pairs a fully embedded Neutrino light client with a verifiable credential wallet so users hold keys, balances, and portable digital assets in one experience. This wallet is the first step toward **Gaming Requests for Comment (GRC)**, the open specification that lets assets move between games, conventions, and metaverses with provable ownership.
@@ -41,12 +41,35 @@ GRC formalizes what the wallet is prototyping:
 - **Security**: immutability via the VDR, cryptographic presentations, and flexible revocation/rotation flows all stem from the same primitives the wallet already runs.
 
 ## Hands-On Flow
-1. Install Flutter, run `flutter pub get`, then launch on iOS/Android with `flutter run`.
-2. Configure node connectivity under **Settings → Node Settings** (default P2P `42069`).
-3. Generate/import a mnemonic, back it up, and let the Neutrino client sync headers/filters.
-4. Tap **Credentials → Demo** to mint a VC and explore its 3D visualization and raw proof block.
-5. Use **Receive** to generate addresses or **Send** to broadcast transactions, proving keys stay local.
-6. Export the credential JSON and verify it with prototype GRC tooling or a Shaicoin VDR indexer.
+1. **Install & Fetch Dependencies**
+   ```
+   flutter pub get
+   ```
+2. **Run ShaiHive on Your Target**
+   - Android emulator/device  
+     ```
+     flutter run -d android
+     ```
+   - iOS simulator/device  
+     ```
+     flutter run -d ios
+     ```
+   - macOS desktop build  
+     ```
+     flutter run -d macos
+     ```
+   - Windows desktop build  
+     ```
+     flutter run -d windows
+     ```
+3. **Configure Node Connectivity**  
+   In-app, open **Settings → Node Settings** and point to your Shaicoin node (default P2P `42069`).
+4. **Initialize Wallet**  
+   Create or import a mnemonic, back it up, and let the Neutrino client sync headers and filters.
+5. **Mint & Inspect a Credential**  
+   Navigate to **Credentials → Demo** to issue a VC, view its holographic card, and flip to the raw JSON proof.
+6. **Transact & Verify**  
+   Use **Receive** for new addresses, **Send** to broadcast transactions, then export the credential JSON and run it through prototype GRC tooling or a VDR indexer to simulate cross-world import.
 
 ## Roadmap to GRC
 1. **VDR Protocol + Indexer**: finalize inscription formats and public APIs so verifiers can trust issuer data.
